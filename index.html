@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weird Studio | Crafting Daily Life Mobile Experiences</title>
+    <meta name="description"
+        content="Weird Studio is a software startup developing innovative mobile applications designed to enhance and simplify your daily life. Explore our portfolio of apps including Yoeyar, Zen Tarot, and more.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Space+Grotesk:wght@300;500;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-dark: #0a0a0c;
+            --bg-card: rgba(20, 20, 25, 0.7);
+            --accent-primary: #8a2be2;
+            --accent-secondary: #00f2ff;
+            --accent-glow: rgba(138, 43, 226, 0.4);
+            --text-main: #ffffff;
+            --text-muted: rgba(255, 255, 255, 0.7);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --nav-bg: rgba(10, 10, 12, 0.8);
+            --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* --- Layout --- */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        section {
+            padding: 8rem 0;
+        }
+
+        /* --- Background Effects --- */
+        .bg-glow {
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        .glow-1,
+        .glow-2 {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            filter: blur(120px);
+            opacity: 0.15;
+            animation: float-glow 20s infinite alternate ease-in-out;
+        }
+
+        .glow-1 {
+            background: var(--accent-primary);
+            top: -100px;
+            right: -100px;
+        }
+
+        .glow-2 {
+            background: var(--accent-secondary);
+            bottom: -100px;
+            left: -100px;
+            animation-delay: -10s;
+        }
+
+        @keyframes float-glow {
+            0% {
+                transform: translate(0, 0) scale(1);
+            }
+
+            100% {
+                transform: translate(100px, 100px) scale(1.1);
+            }
+        }
+
+        .noise {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://grainy-gradients.vercel.app/noise.svg');
+            opacity: 0.03;
+            pointer-events: none;
+            z-index: 999;
+        }
+
+        /* --- Navigation --- */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background: var(--nav-bg);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--glass-border);
+            padding: 1rem 0;
+            transition: var(--transition-smooth);
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: #fff;
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            letter-spacing: -1px;
+        }
+
+        .logo img {
+            height: 40px;
+            width: auto;
+            border-radius: 8px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-muted);
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: var(--transition-smooth);
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-secondary);
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding-top: 120px;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            flex: 1;
+            z-index: 2;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            padding: 6px 16px;
+            background: rgba(138, 43, 226, 0.1);
+            border: 1px solid rgba(138, 43, 226, 0.3);
+            border-radius: 100px;
+            font-size: 0.85rem;
+            color: var(--accent-secondary);
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        .hero h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(3rem, 8vw, 5rem);
+            line-height: 1.1;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #fff 0%, #a8a8a8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin-bottom: 2.5rem;
+        }
+
+        .hero-image {
+            position: absolute;
+            right: -10%;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 55%;
+            height: 80%;
+            z-index: 1;
+            opacity: 0.8;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 40px;
+            box-shadow: -20px 20px 60px rgba(0, 0, 0, 0.5);
+            mask-image: linear-gradient(to left, black 60%, transparent 100%);
+        }
+
+        .cta-group {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .btn {
+            padding: 1rem 2.5rem;
+            border-radius: 12px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: var(--transition-smooth);
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--accent-primary), #6211a8);
+            color: #fff;
+            box-shadow: 0 10px 30px var(--accent-glow);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px var(--accent-glow);
+        }
+
+        .btn-outline {
+            border: 1px solid var(--glass-border);
+            color: #fff;
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-outline:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: var(--text-muted);
+        }
+
+        /* --- Apps Section --- */
+        .section-header {
+            text-align: center;
+            margin-bottom: 5rem;
+        }
+
+        .section-header h2 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .section-header p {
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .apps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .app-card {
+            background: var(--bg-card);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            padding: 2.5rem;
+            transition: var(--transition-smooth);
+            position: relative;
+            overflow: hidden;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .app-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--accent-primary);
+            background: rgba(30, 30, 40, 0.8);
+        }
+
+        .app-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at top right, rgba(138, 43, 226, 0.1), transparent 60%);
+            opacity: 0;
+            transition: var(--transition-smooth);
+        }
+
+        .app-card:hover::before {
+            opacity: 1;
+        }
+
+        .app-icon {
+            width: 64px;
+            height: 64px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            border: 1px solid var(--glass-border);
+        }
+
+        .app-card h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .app-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .app-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--accent-secondary);
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        /* --- Footer --- */
+        footer {
+            padding: 4rem 0;
+            border-top: 1px solid var(--glass-border);
+            margin-top: 4rem;
+            background: rgba(5, 5, 5, 0.5);
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .footer-info p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .social-link {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: var(--transition-smooth);
+        }
+
+        .social-link:hover {
+            color: #fff;
+        }
+
+        /* --- Responsive --- */
+        @media (max-width: 992px) {
+            .hero-image {
+                position: relative;
+                width: 100%;
+                height: 400px;
+                right: 0;
+                top: 0;
+                transform: none;
+                margin-top: 3rem;
+                opacity: 1;
+            }
+
+            .hero-image img {
+                mask-image: none;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 3.5rem;
+            }
+
+            .hero p {
+                margin: 0 auto 2.5rem;
+            }
+
+            .cta-group {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            section {
+                padding: 5rem 0;
+            }
+
+            .section-header h2 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="noise"></div>
+    <div class="bg-glow">
+        <div class="glow-1"></div>
+        <div class="glow-2"></div>
+    </div>
+
+    <nav>
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="logo.png" alt="Weird Studio Logo">
+                <span>Weird Studio</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#apps">Our Apps</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <span class="hero-badge">Innovating the Everyday</span>
+                    <h1>Digital Tools for a Better Life</h1>
+                    <p>We build elegant, intuitive mobile applications that solve real-world problems and bring harmony
+                        to your daily routine.</p>
+                    <div class="cta-group">
+                        <a href="#apps" class="btn btn-primary">Explore Apps</a>
+                        <a href="#about" class="btn btn-outline">Our Story</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="cover.jpg" alt="Weird Studio Lifestyle">
+            </div>
+        </section>
+
+        <section id="apps" class="apps">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Ecosystem</h2>
+                    <p>Designed with precision, built for impact. Discover our range of specialized mobile solutions.
+                    </p>
+                </div>
+
+                <div class="apps-grid">
+                    <!-- <a href="yoeyar/" class="app-card">
+                        <div class="app-icon">✨</div>
+                        <h3>Yoeyar</h3>
+                        <p>Experience cultural heritage reimagined for the digital age. A seamless journey through
+                            tradition.</p>
+                        <span class="app-link">Launch App &rarr;</span>
+                    </a>
+
+                    <a href="zen-tarot/" class="app-card">
+                        <div class="app-icon">🃏</div>
+                        <h3>Zen Tarot</h3>
+                        <p>Find clarity and mindfulness with our intuitive tarot companion. Guided reflections for the
+                            modern soul.</p>
+                        <span class="app-link">Launch App &rarr;</span>
+                    </a> -->
+
+                    <a href="https://play.google.com/store/apps/details?id=com.ttmdev.dhammayake" class="app-card">
+                        <div class="app-icon">
+                            <img src="https://lh3.googleusercontent.com/uDvvOcP-URmhdCsJgTeLYwsOSwJHMVV8nyRXVDgrj0WwhXtEhrCgJzxxQERjXSXg25AFASr2KUDln_fPCBXyjQ"
+                                alt="Dhamma Yake Icon"
+                                style="width: 100%; height: 100%; border-radius: 12px; object-fit: cover;">
+                        </div>
+                        <h3>Dhamma Yake</h3>
+                        <p>Listen to Dhamma sermons anytime, anywhere. Stream, download, and stay mindful.
+                        </p>
+                        <span class="app-link">Launch App &rarr;</span>
+                    </a>
+
+                    <a href="https://play.google.com/store/apps/details?id=com.ttmdev.youoke" class="app-card">
+                        <div class="app-icon">
+                            <img src="https://lh3.googleusercontent.com/_x6hz5XOhkrloYVRigTgtqQbs09i8aZFbtY-a1rVdmL1ST1D0Y8PH1rOQLoj3l1bMReK8xXBMi_CF-f9z5LV_Q"
+                                alt="YouOke Icon"
+                                style="width: 100%; height: 100%; border-radius: 12px; object-fit: cover;">
+                        </div>
+                        <h3>YouOke</h3>
+                        <p>Karaoke song browser and queue player using YouTube video links.</p>
+                        <span class="app-link">Launch App &rarr;</span>
+                    </a>
+
+                    <a href="https://play.google.com/store/apps/details?id=com.ttmdev.zentarot" class="app-card">
+                        <div class="app-icon">
+                            <img src="https://play-lh.googleusercontent.com/uWxaI0YQzd2MGkaYiuz1S2eYyZ4Xx4lRK5FFUqdaeJevwWBKmDHazOCK0zJlyS3nbiinJ0GplvSE4hhjsDH8=w240-h480-rw"
+                                alt="Trending Mix Icon"
+                                style="width: 100%; height: 100%; border-radius: 12px; object-fit: cover;">
+                        </div>
+                        <h3>Zen Tarot</h3>
+                        <p>Discover Peace and Clarity with Zen Tarot
+                        </p>
+                        <span class="app-link">Launch App &rarr;</span>
+                    </a>
+                    
+                    <a href="https://play.google.com/store/apps/details?id=com.ttmdev.trendingmix" class="app-card">
+                        <div class="app-icon">
+                            <img src="https://lh3.googleusercontent.com/upCr6S4eHplbOL_-8pvPYgEwjzoQuPPRL7N6-tuwoqcoEOdHjigL7Bq8mXtSpF5v8H8aP52Pq7Dc5u6rgWIsqw"
+                                alt="Trending Mix Icon"
+                                style="width: 100%; height: 100%; border-radius: 12px; object-fit: cover;">
+                        </div>
+                        <h3>Trending Mix</h3>
+                        <p>Get the trending remixes and viral sounds for your social media videos.
+                        </p>
+                        <span class="app-link">Launch App &rarr;</span>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="apps-grid" style="align-items: center;">
+                    <div class="about-text">
+                        <h2 style="font-family: 'Space Grotesk'; font-size: 3rem; margin-bottom: 2rem;">Solo Creator,
+                            Big Vision</h2>
+                        <p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 1.5rem;">Weird Studio is a
+                            personal laboratory for crafting digital experiences that matter. I believe that software
+                            should be a helpful companion, designed with care and purpose.</p>
+                        <p style="color: var(--text-muted); font-size: 1.1rem;">I focus on building specialized tools
+                            that resonate on a personal level—whether it's through spiritual growth, creative
+                            expression, or cultural connection. Every line of code is written with you in mind.</p>
+                    </div>
+                    <div class="about-card"
+                        style="background: var(--accent-primary); border-radius: 32px; padding: 4rem; text-align: center; box-shadow: 0 30px 60px rgba(138, 43, 226, 0.2);">
+                        <h3 style="font-size: 2.5rem; margin-bottom: 1rem;">Stay Weird.</h3>
+                        <p>My philosophy is simple: Different is better. I embrace the unique needs of users to build
+                            apps that truly stand out.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <a href="#" class="logo" style="margin-bottom: 1rem;">
+                        <img src="logo.png" alt="Weird Studio Logo">
+                        <span>Weird Studio</span>
+                    </a>
+                    <p>&copy; 2026 Weird Studio. All rights reserved.</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth reveal on scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.app-card, .about-text, .about-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 0.8s ease-out';
+            observer.observe(el);
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.style.padding = '0.7rem 0';
+                nav.style.background = 'rgba(10, 10, 12, 0.95)';
+            } else {
+                nav.style.padding = '1rem 0';
+                nav.style.background = 'rgba(10, 10, 12, 0.8)';
+            }
+        });
+    </script>
+</body>
+
+</html>
