@@ -1,33 +1,5 @@
 {
     "apiVersion": 2,
-    "banners": [
-        {
-            "imageUrl": "https://blog.resy.com/wp-content/uploads/2025/12/casanova-karaoke-906x510.jpg",
-            "link": "https://www.youtube.com/"
-        }
-    ],
-    "missingAudioSongIds": [
-        94,
-        97,
-        136,
-        242,
-        244,
-        315,
-        341,
-        380,
-        441,
-        454,
-        455,
-        456,
-        519,
-        522,
-        594,
-        620,
-        626,
-        642,
-        651,
-        663,
-        670,
-        675
-    ]
+    "banners": [],
+    "adFreeHour": 2
 }
