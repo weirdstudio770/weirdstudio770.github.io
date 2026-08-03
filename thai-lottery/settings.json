@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "data_version": 20260801,
+  "latest_draw_date": "2026-08-01",
+  "total_draws": 254,
+  "years_available": [
+    2026,
+    2025,
+    2024,
+    2023,
+    2022,
+    2021,
+    2020,
+    2019,
+    2018,
+    2017,
+    2016,
+    2015
+  ],
+  "announcement": {
+    "en": "",
+    "mm": "",
+    "th": ""
+  },
+  "generated_at": "2026-08-03"
+}
