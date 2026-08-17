@@ -11727,6 +11727,206 @@
       "song_en": "Ah Lwan Nay Yat Shei",
       "youtube_url": "https://www.youtube.com/watch?v=Xppvky6FW7U&list=PLorEXA-YB0LAr4GfnZC_KKE7heaN0ENh3&index=59",
       "id": 1456
+    },
+    {
+      "singer_mm": "ဉာဏ်လင်းအောင်",
+      "singer_en": "Nyan Lin Aung",
+      "song_mm": "သူငယ်ချင်း",
+      "song_en": "Thu Ngal Chin",
+      "youtube_url": "https://www.youtube.com/watch?v=Ze-0fikcVlE&list=RDZe-0fikcVlE&start_radio=1",
+      "id": 1457
+    },
+    {
+      "singer_mm": "ဉာဏ်လင်းအောင်",
+      "singer_en": "Nyan Lin Aung",
+      "song_mm": "ပျော်သလိုနေလိုက်တော့",
+      "song_en": "Pyaw Tha Lo Nay Lite Tot",
+      "youtube_url": "https://www.youtube.com/watch?v=-iIIGlNDb_8&list=RD-iIIGlNDb_8&start_radio=1",
+      "id": 1458
+    },
+    {
+      "singer_mm": "ဉာဏ်လင်းအောင်",
+      "singer_en": "Nyan Lin Aung",
+      "song_mm": "အသင့်ရှိသူ",
+      "song_en": "Ah Thint Shi Thu",
+      "youtube_url": "https://www.youtube.com/watch?v=cS6B9Hmhu-Y&list=RDcS6B9Hmhu-Y&start_radio=1",
+      "id": 1459
+    },
+    {
+      "singer_mm": "ဉာဏ်လင်းအောင်",
+      "singer_en": "Nyan Lin Aung",
+      "song_mm": "ဒုတိယအကြိမ်လွင့်မျော",
+      "song_en": "Du Ti Ya Ah Chein Lwin Myaw",
+      "youtube_url": "https://www.youtube.com/watch?v=T2i5tIwaaq0&list=RDT2i5tIwaaq0&start_radio=1",
+      "id": 1460
+    },
+    {
+      "singer_mm": "ဉာဏ်လင်းအောင်",
+      "singer_en": "Nyan Lin Aung",
+      "song_mm": "မင်းသဘောအတိုင်း",
+      "song_en": "Min Tha Baw Ah Tine",
+      "youtube_url": "https://www.youtube.com/watch?v=COzsszDshX0&list=RDCOzsszDshX0&start_radio=1",
+      "id": 1461
+    },
+    {
+      "singer_mm": "ဉာဏ်လင်းအောင်",
+      "singer_en": "Nyan Lin Aung",
+      "song_mm": "အသည်းကွဲဒီဇင်ဘာ",
+      "song_en": "Ah Thae Khwal December",
+      "youtube_url": "https://www.youtube.com/watch?v=BzYmJzBiy40&list=RDBzYmJzBiy40&start_radio=1",
+      "id": 1462
+    },
+    {
+      "singer_mm": "ဉာဏ်လင်းအောင်",
+      "singer_en": "Nyan Lin Aung",
+      "song_mm": "မင်းတစ်ယောက်တည်းပဲ",
+      "song_en": "Min Ta Yout Tee Pal",
+      "youtube_url": "https://www.youtube.com/watch?v=bJviBaA9Z_4",
+      "id": 1463
+    },
+    {
+      "singer_mm": "ဒီဖြိုး",
+      "singer_en": "D Phyo",
+      "song_mm": "ဒီကောင်မလေးအတွက်",
+      "song_en": "Dee Kaung Ma Lay Ah Twat",
+      "youtube_url": "https://www.youtube.com/watch?v=Ykokul_lvFE",
+      "id": 1464
+    },
+    {
+      "singer_mm": "ဖြိုးကြီး",
+      "singer_en": "Phyo Gyi",
+      "song_mm": "အထည်ကြီးပျက်",
+      "song_en": "Ah Htel Gyi Pyat",
+      "youtube_url": "https://www.youtube.com/watch?v=JpytD5Sjgvo",
+      "id": 1465
+    },
+    {
+      "singer_mm": "ဘိုဖြူ",
+      "singer_en": "Bo Phyu",
+      "song_mm": "မြေပြန့်သူလေး",
+      "song_en": "Myay Pyant Thu Lay",
+      "youtube_url": "https://www.youtube.com/watch?v=SShz0PuKJa8",
+      "id": 1466
+    },
+    {
+      "singer_mm": "မျိုးကြီး",
+      "singer_en": "Myo Gyi",
+      "song_mm": "မလုပ်လိုက်ပါနဲ့",
+      "song_en": "Ma Loke Lite Par Nae",
+      "youtube_url": "https://www.youtube.com/watch?v=sYHduohfH1g",
+      "id": 1467
+    },
+    {
+      "singer_mm": "ဆိုတေး",
+      "singer_en": "So Tay",
+      "song_mm": "မြတ်နိုးခွင့်လေးပေးပါ",
+      "song_en": "Myat Noe Khwint Lay Pay Par",
+      "youtube_url": "https://www.youtube.com/watch?v=RYNE-6Uq2Xw",
+      "id": 1468
+    },
+    {
+      "singer_mm": "Wanted",
+      "singer_en": "Wanted",
+      "song_mm": "အမှတ်မရှိ",
+      "song_en": "Ah Mat Ma Shi",
+      "youtube_url": "https://www.youtube.com/watch?v=RYNE-6Uq2Xw",
+      "id": 1469
+    },
+    {
+      "singer_mm": "ထက်ယံ",
+      "singer_en": "Htet Yan",
+      "song_mm": "ဒီသီချင်းကနင့်အတွက်",
+      "song_en": "Dee Tha Chin Ka Nin Ah Twat",
+      "youtube_url": "https://www.youtube.com/watch?v=IfRqrKdNPJY",
+      "id": 1470
+    },
+    {
+      "singer_mm": "အယ်လ်လွန်းဝါ",
+      "singer_en": "L Lun Wa",
+      "song_mm": "သူငယ်ချင်းချစ်သူ",
+      "song_en": "Thu Ngal Chin Chit Thu",
+      "youtube_url": "https://www.youtube.com/watch?v=Z1WXacVYEoU",
+      "id": 1471
+    },
+    {
+      "singer_mm": "ရဲရင့်အောင်, X Box",
+      "singer_en": "Yair Yint Aung, X Box",
+      "song_mm": "စနေ ဗုဒ္ဓဟူး",
+      "song_en": "Sa Nay Boddha Huu",
+      "youtube_url": "https://www.youtube.com/watch?v=BncY3Druxn0",
+      "id": 1472
+    },
+    {
+      "singer_mm": "ဒီဖြိုး",
+      "singer_en": "D Phyo",
+      "song_mm": "ငါဝအောင်ငိုမယ်",
+      "song_en": "Nga War Aoung Ngo Mal",
+      "youtube_url": "https://www.youtube.com/watch?v=I0QR_8xOiLU&list=RDI0QR_8xOiLU&start_radio=1",
+      "id": 1473
+    },
+    {
+      "singer_mm": "နေမျိုး",
+      "singer_en": "Nay Myo",
+      "song_mm": "မင်းတစ်ယောက်သာ",
+      "song_en": "Min Ta Yout Thar",
+      "youtube_url": "https://www.youtube.com/watch?v=mA_604naSUc&list=RDmA_604naSUc&start_radio=1",
+      "id": 1474
+    },
+    {
+      "singer_mm": "ဒီဖြိုး",
+      "singer_en": "D Phyo",
+      "song_mm": "မင်းလေးသိဖို့",
+      "song_en": "Min Lay Thi Pho",
+      "youtube_url": "https://www.youtube.com/watch?v=Ox-YmT4syuw&list=RDOx-YmT4syuw&start_radio=1",
+      "id": 1475
+    },
+    {
+      "singer_mm": "အယ်လ်လွန်းဝါ",
+      "singer_en": "L Lun Wa",
+      "song_mm": "အချစ်မျက်ဝန်း",
+      "song_en": "Ah Chit Myat Won",
+      "youtube_url": "https://www.youtube.com/watch?v=ZxHvxp5PGNs&list=RDZxHvxp5PGNs&start_radio=1",
+      "id": 1476
+    },
+    {
+      "singer_mm": "ကောင်းကောင်း",
+      "singer_en": "Kaung Kaung",
+      "song_mm": "တန်ဖိုးထားပါ့မယ်",
+      "song_en": "Tan Poe Htar Par Mal",
+      "youtube_url": "https://www.youtube.com/watch?v=I67uUEMMaYU&list=RDI67uUEMMaYU&start_radio=1",
+      "id": 1477
+    },
+    {
+      "singer_mm": "ချစ်သုဝေ",
+      "singer_en": "Chit Thu Wai",
+      "song_mm": "တကယ်ဆိုရင်",
+      "song_en": "Ta Kal So Yin",
+      "youtube_url": "https://www.youtube.com/watch?v=4HeZ6tURXCg",
+      "id": 1478
+    },
+    {
+      "singer_mm": "ချစ်သုဝေ",
+      "singer_en": "Chit Thu Wai",
+      "song_mm": "အဖြူရောင်လေးပါ",
+      "song_en": "Ah Hphyu Yaung Lay Par",
+      "youtube_url": "https://www.youtube.com/watch?v=SIjmvjGa9ME",
+      "id": 1479
+    },
+    {
+      "singer_mm": "ချစ်သုဝေ",
+      "singer_en": "Chit Thu Wai",
+      "song_mm": "တိမ်တွေနေတဲ့အရပ်",
+      "song_en": "Tein Tway Nay Tae Ah Yat",
+      "youtube_url": "https://www.youtube.com/watch?v=HrRFQs2W5b8",
+      "id": 1480
+    },
+    {
+      "singer_mm": "ချစ်သုဝေ",
+      "singer_en": "Chit Thu Wai",
+      "song_mm": "မင်းယုံနိုင်မလား",
+      "song_en": "Min Yone Naing Mar Lar",
+      "youtube_url": "https://www.youtube.com/watch?v=KzUbQGh0irE",
+      "id": 1481
     }
   ]
 }
