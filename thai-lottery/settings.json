@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "data_version": 20260801,
-  "latest_draw_date": "2026-08-01",
-  "total_draws": 254,
+  "data_version": 20260816,
+  "latest_draw_date": "2026-08-16",
+  "total_draws": 255,
   "years_available": [
     2026,
     2025,
@@ -22,5 +22,5 @@
     "mm": "",
     "th": ""
   },
-  "generated_at": "2026-08-03"
+  "generated_at": "2026-08-22"
 }
