@@ -262,7 +262,7 @@
         <div class="header-banner">
             <div class="app-name">Thai Lottery Result</div>
             <h1>Privacy Policy</h1>
-            <p class="effective-date">Last updated: 23 August 2026</p>
+            <p class="effective-date">Last updated: 24 August 2026</p>
         </div>
 
         <div class="content">
@@ -276,6 +276,10 @@
                 <div class="summary-item">
                     <strong>No account needed</strong>
                     <span>We never ask you to sign up or sign in.</span>
+                </div>
+                <div class="summary-item">
+                    <strong>Notifications are optional</strong>
+                    <span>Decline them, or switch them off later in Settings.</span>
                 </div>
                 <div class="summary-item">
                     <strong>Tickets stay on your phone</strong>
@@ -292,7 +296,8 @@
                 phone number, or precise location. The Application has no account system and no server operated by us
                 that holds user data.</p>
             <p>The Application needs an internet connection to run: results are fetched live, so there is no offline
-                mode. It also uses the third-party services described in section 5.</p>
+                mode. It also uses the third-party services described in section 6, which receive technical
+                information such as device identifiers in order to deliver adverts and notifications.</p>
 
             <h2>2. Data Stored On Your Device</h2>
             <p>So the Application opens quickly and remembers how you like it, the following is saved on your device
@@ -304,8 +309,9 @@
                     and the draw it is for. These are kept as your own record of past draws until you delete them.</li>
                 <li><strong>A cached copy of lottery results</strong> — the latest draw, the draw index, and any year
                     you have opened, together with a version marker used to tell when fresher data is available.</li>
-                <li><strong>Basic app state</strong> — such as when an advert was last shown, so you are not shown one
-                    repeatedly.</li>
+                <li><strong>Basic app state</strong> — such as when an advert was last shown so you are not shown one
+                    repeatedly, and whether you have already been asked about notifications so you are not asked
+                    twice.</li>
             </ul>
             <p>This information never leaves your device. We cannot see your saved numbers. Uninstalling the
                 Application, or clearing its data from your device settings, permanently erases all of it.</p>
@@ -325,7 +331,20 @@
             <p>The camera feed is processed on your device purely to decode the QR code. No photo or video is
                 recorded, stored, or uploaded, and the camera is not used anywhere else in the Application.</p>
 
-            <h2>5. Third-Party Services</h2>
+            <h2>5. Notifications</h2>
+            <p>The Application can send you a notification when a new draw has been announced. Permission is asked
+                for once, after the app is open and working, and you are free to decline — everything else continues
+                to work either way.</p>
+            <p>To deliver a notification, your device registers with the push services described in section 6. That
+                registration gives them a push token, which identifies your device as a delivery address. It is not
+                linked to a name or an account, because the Application has neither.</p>
+            <p>The language you have chosen is attached to your registration, so that an announcement can be sent in
+                English, Myanmar or Thai rather than the wrong one. No lottery numbers, saved or otherwise, are ever
+                sent with it.</p>
+            <p>You can turn notifications off at any time from Settings inside the Application, or from your device's
+                notification settings for this app.</p>
+
+            <h2>6. Third-Party Services</h2>
             <p>The Application relies on the following third parties. Each has its own privacy policy governing how it
                 handles data:</p>
 
@@ -354,31 +373,54 @@
                         Advertising Policies</a>.</p>
             </div>
 
-            <h2>6. Source of Lottery Results</h2>
+            <div class="service-provider">
+                <span class="role">Notification delivery</span>
+                <h3>OneSignal</h3>
+                <p>Notifications are sent through OneSignal. When your device registers, OneSignal receives a push
+                    token along with technical details such as device model, operating system version, language,
+                    time zone and the country inferred from your IP address, and assigns your device an identifier of
+                    its own. This is used to deliver notifications and to see how many were delivered. See the
+                    <a href="https://onesignal.com/privacy_policy" target="_blank" rel="noopener">OneSignal Privacy
+                        Policy</a>.</p>
+            </div>
+
+            <div class="service-provider">
+                <span class="role">Notification transport</span>
+                <h3>Google Firebase Cloud Messaging</h3>
+                <p>On Android, notifications reach your device over Firebase Cloud Messaging, Google's delivery
+                    service. Your device registers with Google to receive them, which involves a device registration
+                    token. The Application uses Firebase only as this delivery channel — it does not use Firebase
+                    analytics, and no lottery numbers or personal details are sent through it. See the
+                    <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase
+                        Privacy and Security</a> information.</p>
+            </div>
+
+            <h2>7. Source of Lottery Results</h2>
             <p>Results shown in the Application are compiled from publicly published Thai lottery result listings. We
                 are not affiliated with, endorsed by, or operated by the Government Lottery Office (GLO) of Thailand.
                 Results are provided for informational convenience only and may contain errors or delays — always
                 confirm any win against the official announcement before acting on it.</p>
 
-            <h2>7. Children's Privacy</h2>
+            <h2>8. Children's Privacy</h2>
             <p>The Application is not directed at children under the age of 13, and we do not knowingly collect
                 personal information from them. If you are a parent or guardian and believe your child has provided us
                 with personal information, please contact us so we can take appropriate action.</p>
 
-            <h2>8. Your Choices</h2>
+            <h2>9. Your Choices</h2>
             <ul>
                 <li>Reset or opt out of ad personalization using the Advertising ID controls in your device settings.</li>
                 <li>Decline camera access and enter your numbers by hand; the scanner is optional.</li>
+                <li>Turn notifications off in the Application's Settings, or in your device's settings for this app.</li>
                 <li>Delete any saved number, or clear a whole draw, from the "My Numbers" screen.</li>
                 <li>Clear everything the Application has stored by clearing its data or uninstalling it.</li>
             </ul>
 
-            <h2>9. Changes to This Privacy Policy</h2>
+            <h2>10. Changes to This Privacy Policy</h2>
             <p>We may update this Privacy Policy from time to time. Any changes take effect as soon as the revised
                 policy is posted on this page, and the "Last updated" date above will be revised accordingly. We
                 encourage you to review this page periodically.</p>
 
-            <h2>10. Contact Us</h2>
+            <h2>11. Contact Us</h2>
             <p>If you have questions or suggestions about this Privacy Policy, please get in touch:</p>
             <div class="contact-box">
                 <strong>Email Support:</strong>
