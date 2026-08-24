@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Easy QR Barcode</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 24px 16px;
+            font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, Tahoma, sans-serif;
+            line-height: 1.7;
+            color: #0F172A;
+            background-color: #EEF2F7;
+            background-image:
+                radial-gradient(ellipse 60% 40% at 15% 0%, rgba(79, 70, 229, 0.10), transparent),
+                radial-gradient(ellipse 50% 35% at 90% 100%, rgba(139, 92, 246, 0.10), transparent);
+            background-attachment: fixed;
+        }
+
+        .container {
+            max-width: 780px;
+            margin: 0 auto;
+            background: #FFFFFF;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow:
+                0 20px 25px -5px rgba(30, 27, 75, 0.08),
+                0 8px 10px -6px rgba(30, 27, 75, 0.06),
+                0 0 0 1px rgba(226, 232, 240, 0.9);
+        }
+
+        .header-banner {
+            background: linear-gradient(135deg, #1E1B4B 0%, #4338CA 55%, #7C3AED 100%);
+            color: #FFFFFF;
+            padding: 36px 34px;
+            display: flex;
+            align-items: center;
+            gap: 18px;
+        }
+
+        .app-badge {
+            flex-shrink: 0;
+            width: 56px;
+            height: 56px;
+            border-radius: 16px;
+            background: rgba(255, 255, 255, 0.14);
+            backdrop-filter: blur(4px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header-banner h1 {
+            margin: 0 0 6px 0;
+            font-size: 26px;
+            letter-spacing: -0.02em;
+            font-weight: 800;
+        }
+
+        .effective-date {
+            margin: 0;
+            font-size: 13.5px;
+            color: #C7D2FE;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .effective-date::before {
+            content: '';
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #A78BFA;
+        }
+
+        .content {
+            padding: 32px 34px 38px;
+        }
+
+        h2 {
+            font-size: 17.5px;
+            font-weight: 750;
+            letter-spacing: -0.01em;
+            color: #312E81;
+            margin: 34px 0 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h2:first-of-type {
+            margin-top: 0;
+        }
+
+        h2 .num {
+            flex-shrink: 0;
+            width: 26px;
+            height: 26px;
+            border-radius: 8px;
+            background: #EEF2FF;
+            color: #4F46E5;
+            font-size: 13px;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        p {
+            margin: 0 0 14px;
+            color: #334155;
+            font-size: 15px;
+        }
+
+        strong {
+            color: #0F172A;
+        }
+
+        a {
+            color: #4F46E5;
+            font-weight: 600;
+            text-decoration: none;
+            border-bottom: 1.5px solid rgba(79, 70, 229, 0.25);
+            transition: border-color 0.15s ease;
+        }
+
+        a:hover {
+            border-bottom-color: #4F46E5;
+        }
+
+        ul {
+            margin: 0 0 14px;
+            padding-left: 20px;
+            color: #334155;
+            font-size: 15px;
+        }
+
+        li {
+            margin-bottom: 7px;
+        }
+
+        li::marker {
+            color: #8B5CF6;
+        }
+
+        .chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 4px 0 16px;
+        }
+
+        .chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            background: #F5F3FF;
+            border: 1px solid #DDD6FE;
+            color: #4C1D95;
+            font-size: 13px;
+            font-weight: 600;
+            padding: 7px 13px;
+            border-radius: 999px;
+        }
+
+        .chip svg {
+            width: 15px;
+            height: 15px;
+            stroke: #7C3AED;
+        }
+
+        .callout {
+            background: #F8FAFC;
+            border: 1px solid #E2E8F0;
+            border-left: 4px solid #4F46E5;
+            border-radius: 0 12px 12px 0;
+            padding: 14px 16px;
+            margin: 0 0 16px;
+            font-size: 14.5px;
+            color: #334155;
+        }
+
+        .provider-card {
+            background: #FFFFFF;
+            border: 1px solid #E2E8F0;
+            border-radius: 14px;
+            padding: 18px 20px;
+            margin: 0 0 14px;
+            box-shadow: 0 1px 3px rgba(15, 23, 42, 0.05);
+        }
+
+        .provider-card h3 {
+            margin: 0 0 8px;
+            font-size: 15.5px;
+            font-weight: 700;
+            color: #1E1B4B;
+        }
+
+        .provider-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .contact-box {
+            background: linear-gradient(135deg, #EEF2FF, #F5F3FF);
+            border: 1px solid #E0E7FF;
+            border-radius: 14px;
+            padding: 18px 20px;
+            margin-top: 6px;
+        }
+
+        .contact-box p {
+            margin: 0;
+        }
+
+        .footer-note {
+            text-align: center;
+            font-size: 12.5px;
+            color: #94A3B8;
+            margin-top: 28px;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 12px 8px;
+            }
+
+            .header-banner {
+                padding: 26px 22px;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 14px;
+            }
+
+            .content {
+                padding: 24px 20px 30px;
+            }
+
+            h1 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header-banner">
+            <div class="app-badge">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.8"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="3" y="3" width="7" height="7" rx="1"></rect>
+                    <rect x="14" y="3" width="7" height="7" rx="1"></rect>
+                    <rect x="3" y="14" width="7" height="7" rx="1"></rect>
+                    <path d="M14 14h3v3h-3zM21 14v1M14 21h1M18 18h3v3h-3z"></path>
+                </svg>
+            </div>
+            <div>
+                <h1>Privacy Policy</h1>
+                <span class="effective-date">Easy QR Barcode &middot; Last updated: August 24, 2026</span>
+            </div>
+        </div>
+
+        <div class="content">
+            <p>This privacy policy governs your use of the software application <strong>Easy QR
+                    Barcode</strong> ("Application") for mobile devices. The Application lets you create, customize,
+                scan, and manage QR codes and barcodes. Its core features work fully offline.</p>
+
+            <h2><span class="num">1</span> Information We Collect</h2>
+            <p>The Application does not require you to create an account, and we do not collect or store any personally
+                identifiable information (such as your name, email address, or location) on servers managed by us.
+                Everything you generate or scan stays on your device.</p>
+            <p>However, the Application integrates third-party services that may collect information used to identify
+                you, improve performance, and serve advertisements, as described below.</p>
+
+            <h2><span class="num">2</span> Permissions &amp; Device Access</h2>
+            <p>The Application requests the following permissions, only when needed for the feature you are using:</p>
+            <div class="chips">
+                <span class="chip">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        aria-hidden="true">
+                        <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+                        <circle cx="12" cy="13" r="4" />
+                    </svg>
+                    Camera
+                </span>
+                <span class="chip">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        aria-hidden="true">
+                        <path
+                            d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01" />
+                    </svg>
+                    Wi-Fi State
+                </span>
+                <span class="chip">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        aria-hidden="true">
+                        <rect x="3" y="3" width="18" height="18" rx="2" />
+                        <circle cx="8.5" cy="8.5" r="1.5" />
+                        <path d="m21 15-5-5L5 21" />
+                    </svg>
+                    Photos / Gallery
+                </span>
+            </div>
+            <ul>
+                <li><strong>Camera</strong> &mdash; used exclusively to scan QR codes and barcodes through the in-app
+                    scanner. No photos or video are recorded or uploaded.</li>
+                <li><strong>Wi-Fi state / network state</strong> &mdash; used when you tap "Connect to Wi-Fi" after
+                    scanning a Wi-Fi QR code, so your device can join that network.</li>
+                <li><strong>Photos / gallery</strong> &mdash; used to pick an existing image for scanning and to save
+                    generated codes back to your gallery at your request.</li>
+            </ul>
+
+            <h2><span class="num">3</span> Third-Party Services</h2>
+            <p>To support development and keep the Application free, we integrate the following third-party SDK:</p>
+            <div class="provider-card">
+                <h3>Google AdMob</h3>
+                <p>We use Google AdMob to display advertisements within the Application. AdMob may collect and use
+                    personalized or non-personalized data, such as device identifiers (Advertising ID), cookies, and
+                    usage data, to serve relevant ads. You can opt out of personalized advertising in your device's
+                    settings. For more information, please visit the <a
+                        href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google
+                        Advertising Policies</a>.</p>
+            </div>
+
+            <h2><span class="num">4</span> Local Storage &amp; Data Security</h2>
+            <div class="callout">
+                Your scan history, created codes, and preferences (language, theme) are stored <strong>only on your
+                    device</strong>. They are never uploaded to any remote server managed by us. Clearing the
+                Application's data or uninstalling it permanently erases everything.
+            </div>
+
+            <h2><span class="num">5</span> Data Sharing &amp; Sale</h2>
+            <p>We do not sell, trade, or rent your personal information. The only sharing that occurs is through the
+                third-party advertising service described in Section 3, governed by that provider's own privacy policy.
+                When you use actions such as opening links, sending SMS/email, or sharing files, the relevant content
+                is handled directly by the apps you choose.</p>
+
+            <h2><span class="num">6</span> Children's Privacy</h2>
+            <p>The Application does not knowingly collect personally identifiable information from children under 13.
+                If you are a parent or guardian and believe your child has provided personal information through the
+                Application, please contact us so we can take appropriate action.</p>
+
+            <h2><span class="num">7</span> Changes to This Privacy Policy</h2>
+            <p>We may update this Privacy Policy from time to time. You are advised to review this page periodically
+                for changes. Updates are effective immediately after they are posted on this page.</p>
+
+            <h2><span class="num">8</span> Contact Us</h2>
+            <p>If you have questions or suggestions about this Privacy Policy, contact us at:</p>
+            <div class="contact-box">
+                <p><strong>Email Support:</strong> <a
+                        href="mailto:weirdstudio770@gmail.com">weirdstudio770@gmail.com</a></p>
+            </div>
+
+            <p class="footer-note">&copy; 2026 Easy QR Barcode. All rights reserved.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
