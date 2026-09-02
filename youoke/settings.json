@@ -1,7 +1,12 @@
 {
-    "apiVersion": 22,
-    "banners": [],
+    "apiVersion": 23,
+    "banners": [
+        {
+            "imageUrl": "https://weirdstudio770.github.io/youoke/thumbnail/coca_shop01.webp",
+            "link": "https://play.google.com/store/apps/details?id=com.ccdev.cocashop"
+        }
+    ],
     "adFreeHour": 4,
     "showBannerAds": false,
-    "showNativeAds": true 
+    "showNativeAds": true
 }
