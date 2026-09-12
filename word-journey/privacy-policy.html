@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Word Journey</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0b0f19;
+            --card-bg: #111827;
+            --accent-color: #f5a524;
+            --accent-glow: rgba(245, 165, 36, 0.15);
+            --text-primary: #f3f4f6;
+            --text-secondary: #9ca3af;
+            --border-color: #1f2937;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            color: var(--text-primary);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 40px 20px;
+            background-image:
+                radial-gradient(at 0% 0%, rgba(245, 165, 36, 0.05) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(245, 165, 36, 0.03) 0px, transparent 50%);
+            background-attachment: fixed;
+        }
+
+        .container {
+            max-width: 760px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5), 0 1px 3px rgba(245, 165, 36, 0.05);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent-color), #ffd08a);
+        }
+
+        .header-banner {
+            margin-bottom: 35px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        h1 {
+            margin: 0 0 10px 0;
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            background: linear-gradient(135deg, #ffffff 0%, #a3a3a3 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .app-badge {
+            display: inline-block;
+            background-color: var(--accent-glow);
+            color: var(--accent-color);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            border: 1px solid rgba(245, 165, 36, 0.3);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .effective-date {
+            font-size: 14px;
+            color: var(--text-secondary);
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #ffffff;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        h2::before {
+            content: '';
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background-color: var(--accent-color);
+            border-radius: 50%;
+            margin-right: 12px;
+            box-shadow: 0 0 8px var(--accent-color);
+        }
+
+        p {
+            margin-bottom: 20px;
+            color: var(--text-secondary);
+            text-align: left;
+        }
+
+        ul {
+            margin: 0 0 20px 0;
+            padding-left: 20px;
+            color: var(--text-secondary);
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        strong {
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        .service-provider {
+            background-color: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-provider:hover {
+            border-color: rgba(245, 165, 36, 0.3);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .service-provider h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        .service-provider p {
+            margin-bottom: 12px;
+            font-size: 14px;
+        }
+
+        .contact-box {
+            background-color: var(--accent-glow);
+            border: 1px solid rgba(245, 165, 36, 0.2);
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .contact-box strong {
+            color: var(--accent-color);
+        }
+
+        a {
+            color: var(--accent-color);
+            font-weight: 500;
+            text-decoration: none;
+            transition: color 0.2s ease, text-decoration 0.2s ease;
+        }
+
+        a:hover {
+            color: #ffd08a;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding: 20px 10px;
+            }
+
+            .container {
+                padding: 24px;
+            }
+
+            h1 {
+                font-size: 26px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header-banner">
+            <span class="app-badge">Word Journey</span>
+            <h1>Privacy Policy</h1>
+            <p class="effective-date">Last updated: September 12, 2026</p>
+        </div>
+
+        <p>This privacy policy governs your use of the software application <strong>Word Journey</strong>
+            ("Application") for mobile devices. The Application is an offline word puzzle game in which you connect
+            letters to find words, progress through levels, earn coins, keep a daily streak, and spin for bonus
+            rewards.</p>
+
+        <h2>1. Information We Collect and Use</h2>
+        <p>The Application is designed to be played offline. We do not require you to create an account or sign in, and
+            we do not collect or store any personally identifiable information (such as your name, email address, phone
+            number, or physical location) on our own servers. We operate no servers that receive your game data.</p>
+        <p>However, the Application uses third-party services that may collect information used to identify your device,
+            measure performance, and serve advertisements.</p>
+
+        <h2>2. Third-Party Services</h2>
+        <p>To keep the game free and to fund continued development, we integrate the following third-party SDKs:</p>
+
+        <div class="service-provider">
+            <h3>Google AdMob</h3>
+            <p>We use Google AdMob to display banner, interstitial, app open, and rewarded advertisements. Rewarded ads
+                are optional and are shown only when you choose to watch one in exchange for in-game rewards such as
+                coins or extra spins. AdMob may collect and use data such as device identifiers (Advertising ID),
+                cookies, IP address, and app usage data to serve personalized or non-personalized ads. For more
+                information, please see: <a href="https://policies.google.com/technologies/ads" target="_blank"
+                    rel="noopener noreferrer">Google Advertising Policies</a>.</p>
+        </div>
+
+        <div class="service-provider">
+            <h3>Google User Messaging Platform (Consent)</h3>
+            <p>In regions where it is required (such as the European Economic Area and the United Kingdom), the
+                Application shows a consent form provided by Google's User Messaging Platform before ads are loaded. You
+                may choose whether to allow personalized advertising, and your choice is stored by that SDK on your
+                device.</p>
+        </div>
+
+        <div class="service-provider">
+            <h3>Google Play / Apple App Store Review Prompt</h3>
+            <p>The Application may occasionally ask you to rate the game using the official in-app review feature
+                provided by Google Play or the Apple App Store. The review itself is handled entirely by the store; we
+                do not receive or store your rating or any personal data from it.</p>
+        </div>
+
+        <h2>3. Offline Storage and Data Security</h2>
+        <p>All of your game data is stored locally on your device only. This includes:</p>
+        <ul>
+            <li>Your current level and level progress</li>
+            <li>Coins and bonus rewards</li>
+            <li>Daily streak and daily challenge status</li>
+            <li>Sound and haptic feedback preferences</li>
+            <li>Spin usage counters and rating prompt status</li>
+        </ul>
+        <p>This data is never uploaded to any remote server managed by us. If you clear the Application's data or
+            uninstall the Application, all local progress and preferences are permanently erased and cannot be
+            recovered.</p>
+
+        <h2>4. Children's Privacy</h2>
+        <p>These Services do not address anyone under the age of 13. We do not knowingly collect personally identifiable
+            information from children under 13. If you are a parent or guardian and you are aware that your child has
+            provided us with personal information, please contact us so that we can take the necessary actions.</p>
+
+        <h2>5. Your Choices</h2>
+        <p>You can reset or delete your advertising identifier at any time in your device settings (Android: Settings →
+            Google → Ads; iOS: Settings → Privacy &amp; Security → Tracking). You can also limit ad personalization
+            there, or through the consent form shown inside the Application where it applies. To remove all data the
+            Application has stored, simply uninstall it.</p>
+
+        <h2>6. Changes to This Privacy Policy</h2>
+        <p>We may update our Privacy Policy from time to time. You are advised to review this page periodically for any
+            changes. These changes are effective immediately after they are posted on this page.</p>
+
+        <h2>7. Contact Us</h2>
+        <p>If you have any questions or suggestions about this Privacy Policy, do not hesitate to contact us at:</p>
+        <div class="contact-box">
+            <strong>Email Support:</strong>
+            <a href="mailto:weirdstudio770@gmail.com">weirdstudio770@gmail.com</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
