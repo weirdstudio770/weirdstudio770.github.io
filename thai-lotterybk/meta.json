@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "languages": [
+    "en",
+    "mm",
+    "th"
+  ],
+  "prize_tiers": [
+    {
+      "key": "first_prize",
+      "amount_baht": 6000000,
+      "match": "full-6",
+      "label": {
+        "en": "First Prize",
+        "mm": "ပထမဆု",
+        "th": "รางวัลที่ 1"
+      }
+    },
+    {
+      "key": "near_first_prize",
+      "amount_baht": 100000,
+      "match": "full-6",
+      "label": {
+        "en": "Near First Prize",
+        "mm": "ပထမဆု အနီးဆုံး",
+        "th": "รางวัลข้างเคียงรางวัลที่ 1"
+      }
+    },
+    {
+      "key": "second_prize",
+      "amount_baht": 200000,
+      "match": "full-6",
+      "label": {
+        "en": "Second Prize",
+        "mm": "ဒုတိယဆု",
+        "th": "รางวัลที่ 2"
+      }
+    },
+    {
+      "key": "third_prize",
+      "amount_baht": 80000,
+      "match": "full-6",
+      "label": {
+        "en": "Third Prize",
+        "mm": "တတိယဆု",
+        "th": "รางวัลที่ 3"
+      }
+    },
+    {
+      "key": "fourth_prize",
+      "amount_baht": 40000,
+      "match": "full-6",
+      "label": {
+        "en": "Fourth Prize",
+        "mm": "စတုတ္ထဆု",
+        "th": "รางวัลที่ 4"
+      }
+    },
+    {
+      "key": "fifth_prize",
+      "amount_baht": 20000,
+      "match": "full-6",
+      "label": {
+        "en": "Fifth Prize",
+        "mm": "ပဉ္စမဆု",
+        "th": "รางวัลที่ 5"
+      }
+    },
+    {
+      "key": "front_3_digits",
+      "amount_baht": 4000,
+      "match": "first-3",
+      "label": {
+        "en": "Front 3 Digits",
+        "mm": "ရှေ့ ၃ လုံး",
+        "th": "เลขหน้า 3 ตัว"
+      }
+    },
+    {
+      "key": "back_3_digits",
+      "amount_baht": 4000,
+      "match": "last-3",
+      "label": {
+        "en": "Back 3 Digits",
+        "mm": "နောက် ၃ လုံး",
+        "th": "เลขท้าย 3 ตัว"
+      }
+    },
+    {
+      "key": "last_2_digits",
+      "amount_baht": 2000,
+      "match": "last-2",
+      "label": {
+        "en": "Last 2 Digits",
+        "mm": "နောက်ဆုံး ၂ လုံး",
+        "th": "เลขท้าย 2 ตัว"
+      }
+    }
+  ],
+  "months": {
+    "en": [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
+    ],
+    "mm": [
+      "ဇန်နဝါရီ",
+      "ဖေဖော်ဝါရီ",
+      "မတ်",
+      "ဧပြီ",
+      "မေ",
+      "ဇွန်",
+      "ဇူလိုင်",
+      "ဩဂုတ်",
+      "စက်တင်ဘာ",
+      "အောက်တိုဘာ",
+      "နိုဝင်ဘာ",
+      "ဒီဇင်ဘာ"
+    ],
+    "th": [
+      "มกราคม",
+      "กุมภาพันธ์",
+      "มีนาคม",
+      "เมษายน",
+      "พฤษภาคม",
+      "มิถุนายน",
+      "กรกฎาคม",
+      "สิงหาคม",
+      "กันยายน",
+      "ตุลาคม",
+      "พฤศจิกายน",
+      "ธันวาคม"
+    ]
+  }
+}

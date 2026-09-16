@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Privacy Policy for the Thai Lottery Result mobile application by Weird Studio.">
+    <meta name="color-scheme" content="light dark">
+    <title>Privacy Policy - Thai Lottery Result</title>
+    <style>
+        /* Palette mirrors lib/utils/style.dart so the page reads as part of
+           the app: Blue 600/700 primary on a white canvas, slate text, and
+           hairline borders doing the separation work instead of heavy fills. */
+        :root {
+            --primary: #2563EB;
+            --primary-deep: #1D4ED8;
+            --bg: #F8FAFC;
+            --surface: #FFFFFF;
+            --surface-muted: #F1F5F9;
+            --border: #E2E8F0;
+            --text-main: #0F172A;
+            --text-secondary: #475569;
+            --text-dim: #64748B;
+            --gold: #D97706;
+            --gold-strong: #92400E;
+            --gold-soft: #FFFBEB;
+            --shadow: 0 1px 2px rgb(15 23 42 / 0.04), 0 8px 24px -12px rgb(15 23 42 / 0.12);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary: #60A5FA;
+                --primary-deep: #3B82F6;
+                --bg: #020617;
+                --surface: #0F172A;
+                --surface-muted: #1E293B;
+                --border: #1E293B;
+                --text-main: #F1F5F9;
+                --text-secondary: #CBD5E1;
+                --text-dim: #94A3B8;
+                --gold: #FBBF24;
+                --gold-strong: #FCD34D;
+                --gold-soft: #1C1710;
+                --shadow: 0 1px 2px rgb(0 0 0 / 0.4), 0 8px 24px -12px rgb(0 0 0 / 0.6);
+            }
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+                'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.65;
+            color: var(--text-main);
+            background-color: var(--bg);
+            margin: 0;
+            padding: 24px 16px 56px;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        .container {
+            max-width: 760px;
+            margin: 0 auto;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+        }
+
+        .header-banner {
+            background: linear-gradient(135deg, #3B82F6 0%, #1D4ED8 100%);
+            color: #FFFFFF;
+            padding: 32px 28px;
+        }
+
+        .app-name {
+            display: inline-block;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            background: rgb(255 255 255 / 0.16);
+            border: 1px solid rgb(255 255 255 / 0.24);
+            border-radius: 999px;
+            padding: 4px 12px;
+            margin-bottom: 14px;
+        }
+
+        h1 {
+            margin: 0 0 8px;
+            font-size: clamp(24px, 5vw, 30px);
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+
+        .effective-date {
+            font-size: 14px;
+            color: #DBEAFE;
+            margin: 0;
+        }
+
+        .content {
+            padding: 28px;
+        }
+
+        /* At-a-glance strip: the three facts most people open this page for. */
+        .summary {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 12px;
+            margin: 0 0 32px;
+        }
+
+        .summary-item {
+            background: var(--surface-muted);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 14px 16px;
+        }
+
+        .summary-item strong {
+            display: block;
+            font-size: 13px;
+            color: var(--primary-deep);
+            margin-bottom: 2px;
+        }
+
+        .summary-item span {
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+
+        h2 {
+            font-size: 18px;
+            color: var(--text-main);
+            margin: 34px 0 12px;
+            padding-left: 12px;
+            border-left: 3px solid var(--primary);
+            letter-spacing: -0.01em;
+        }
+
+        h2:first-of-type {
+            margin-top: 0;
+        }
+
+        p {
+            margin: 0 0 14px;
+            color: var(--text-secondary);
+        }
+
+        ul {
+            margin: 0 0 14px;
+            padding-left: 20px;
+            color: var(--text-secondary);
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        li strong {
+            color: var(--text-main);
+        }
+
+        .service-provider {
+            background: var(--surface-muted);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 16px 18px;
+            margin-bottom: 14px;
+        }
+
+        .service-provider h3 {
+            margin: 0 0 6px;
+            font-size: 15px;
+            color: var(--text-main);
+        }
+
+        .service-provider p:last-child {
+            margin-bottom: 0;
+        }
+
+        .service-provider .role {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: var(--text-dim);
+            margin-bottom: 8px;
+        }
+
+        /* Gold accent, reused from the app's first-prize spotlight, for the
+           one thing a lottery app must not be vague about. */
+        .notice {
+            background: var(--gold-soft);
+            border: 1px solid var(--gold);
+            border-radius: 12px;
+            padding: 16px 18px;
+            margin: 0 0 14px;
+        }
+
+        .notice p {
+            color: var(--gold-strong);
+            margin: 0;
+            font-size: 14px;
+        }
+
+        .contact-box {
+            background: var(--surface-muted);
+            border: 1px solid var(--border);
+            border-left: 3px solid var(--primary);
+            border-radius: 12px;
+            padding: 16px 18px;
+            margin-top: 8px;
+        }
+
+        a {
+            color: var(--primary-deep);
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        a:hover,
+        a:focus-visible {
+            text-decoration: underline;
+        }
+
+        footer {
+            max-width: 760px;
+            margin: 20px auto 0;
+            text-align: center;
+            font-size: 13px;
+            color: var(--text-dim);
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 12px 10px 40px;
+            }
+
+            .header-banner {
+                padding: 26px 20px;
+            }
+
+            .content {
+                padding: 22px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header-banner">
+            <div class="app-name">Thai Lottery Result</div>
+            <h1>Privacy Policy</h1>
+            <p class="effective-date">Last updated: 24 August 2026</p>
+        </div>
+
+        <div class="content">
+
+            <p>This Privacy Policy explains how the mobile application <strong>Thai Lottery Result</strong>
+                ("Application", "we", "us") handles your information. The Application lets you view Thai Government
+                Lottery results, browse past draws by year, save the numbers you hold, and check them against any
+                draw — by typing them in or by scanning the QR code on a ticket.</p>
+
+            <div class="summary">
+                <div class="summary-item">
+                    <strong>No account needed</strong>
+                    <span>We never ask you to sign up or sign in.</span>
+                </div>
+                <div class="summary-item">
+                    <strong>Notifications are optional</strong>
+                    <span>Decline them, or switch them off later in Settings.</span>
+                </div>
+                <div class="summary-item">
+                    <strong>Tickets stay on your phone</strong>
+                    <span>Numbers you check are never sent to us.</span>
+                </div>
+                <div class="summary-item">
+                    <strong>Camera is only a scanner</strong>
+                    <span>QR reading happens on your phone; no photo is kept.</span>
+                </div>
+            </div>
+
+            <h2>1. Information We Collect</h2>
+            <p>We do not collect, store, or sell personally identifiable information such as your name, email address,
+                phone number, or precise location. The Application has no account system and no server operated by us
+                that holds user data.</p>
+            <p>The Application needs an internet connection to run: results are fetched live, so there is no offline
+                mode. It also uses the third-party services described in section 6, which receive technical
+                information such as device identifiers in order to deliver adverts and notifications.</p>
+
+            <h2>2. Data Stored On Your Device</h2>
+            <p>So the Application opens quickly and remembers how you like it, the following is saved on your device
+                only:</p>
+            <ul>
+                <li><strong>Your language preference</strong> — English, Myanmar, or Thai.</li>
+                <li><strong>Your appearance preference</strong> — system, light, or dark.</li>
+                <li><strong>Numbers you save in "My Numbers"</strong> — each number, how many tickets of it you hold,
+                    and the draw it is for. These are kept as your own record of past draws until you delete them.</li>
+                <li><strong>A cached copy of lottery results</strong> — the latest draw, the draw index, and any year
+                    you have opened, together with a version marker used to tell when fresher data is available.</li>
+                <li><strong>Basic app state</strong> — such as when an advert was last shown so you are not shown one
+                    repeatedly, and whether you have already been asked about notifications so you are not asked
+                    twice.</li>
+            </ul>
+            <p>This information never leaves your device. We cannot see your saved numbers. Uninstalling the
+                Application, or clearing its data from your device settings, permanently erases all of it.</p>
+
+            <h2>3. Ticket Numbers You Enter</h2>
+            <div class="notice">
+                <p>Ticket checking runs entirely on your device. Numbers you type or scan are compared against the
+                    lottery results already downloaded to your phone and are never transmitted to us or to anyone
+                    else. Numbers are kept only where you asked us to keep them — in "My Numbers" — and are deleted
+                    when you remove them.</p>
+            </div>
+
+            <h2>4. Camera and Ticket Scanning</h2>
+            <p>The Application can read the QR code printed on a lottery ticket so you do not have to type the number.
+                Camera access is requested only when you open the scanner, and you can decline it and continue to
+                enter numbers by hand.</p>
+            <p>The camera feed is processed on your device purely to decode the QR code. No photo or video is
+                recorded, stored, or uploaded, and the camera is not used anywhere else in the Application.</p>
+
+            <h2>5. Notifications</h2>
+            <p>The Application can send you a notification when a new draw has been announced. Permission is asked
+                for once, after the app is open and working, and you are free to decline — everything else continues
+                to work either way.</p>
+            <p>To deliver a notification, your device registers with the push services described in section 6. That
+                registration gives them a push token, which identifies your device as a delivery address. It is not
+                linked to a name or an account, because the Application has neither.</p>
+            <p>The language you have chosen is attached to your registration, so that an announcement can be sent in
+                English, Myanmar or Thai rather than the wrong one. No lottery numbers, saved or otherwise, are ever
+                sent with it.</p>
+            <p>You can turn notifications off at any time from Settings inside the Application, or from your device's
+                notification settings for this app.</p>
+
+            <h2>6. Third-Party Services</h2>
+            <p>The Application relies on the following third parties. Each has its own privacy policy governing how it
+                handles data:</p>
+
+            <div class="service-provider">
+                <span class="role">Result data hosting</span>
+                <h3>GitHub Pages</h3>
+                <p>Lottery results are published as static files on GitHub Pages, and the Application downloads them
+                    directly. As with visiting any website, GitHub may record technical request information such as
+                    your IP address and device type. We receive no part of these logs. See the
+                    <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+                        target="_blank" rel="noopener">GitHub Privacy Statement</a>.</p>
+            </div>
+
+            <div class="service-provider">
+                <span class="role">Advertising</span>
+                <h3>Google AdMob</h3>
+                <p>The Application shows adverts supplied by Google AdMob to fund continued development. You may
+                    see a banner at the bottom of the screen, an advert in the draw history list, and an occasional
+                    full-screen advert when opening the app.</p>
+                <p>To serve these, AdMob may collect and use data such as device identifiers (including the
+                    Advertising ID), cookies, general location inferred from your IP address, and app usage
+                    information, in order to deliver personalized or non-personalized adverts and to measure their
+                    performance. This happens between your device and Google; we do not receive it. You can reset or
+                    delete your Advertising ID, or opt out of ad personalization, in your device settings. See
+                    <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google
+                        Advertising Policies</a>.</p>
+            </div>
+
+            <div class="service-provider">
+                <span class="role">Notification delivery</span>
+                <h3>OneSignal</h3>
+                <p>Notifications are sent through OneSignal. When your device registers, OneSignal receives a push
+                    token along with technical details such as device model, operating system version, language,
+                    time zone and the country inferred from your IP address, and assigns your device an identifier of
+                    its own. This is used to deliver notifications and to see how many were delivered. See the
+                    <a href="https://onesignal.com/privacy_policy" target="_blank" rel="noopener">OneSignal Privacy
+                        Policy</a>.</p>
+            </div>
+
+            <div class="service-provider">
+                <span class="role">Notification transport</span>
+                <h3>Google Firebase Cloud Messaging</h3>
+                <p>On Android, notifications reach your device over Firebase Cloud Messaging, Google's delivery
+                    service. Your device registers with Google to receive them, which involves a device registration
+                    token. The Application uses Firebase only as this delivery channel — it does not use Firebase
+                    analytics, and no lottery numbers or personal details are sent through it. See the
+                    <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase
+                        Privacy and Security</a> information.</p>
+            </div>
+
+            <h2>7. Source of Lottery Results</h2>
+            <p>Results shown in the Application are compiled from publicly published Thai lottery result listings. We
+                are not affiliated with, endorsed by, or operated by the Government Lottery Office (GLO) of Thailand.
+                Results are provided for informational convenience only and may contain errors or delays — always
+                confirm any win against the official announcement before acting on it.</p>
+
+            <h2>8. Children's Privacy</h2>
+            <p>The Application is not directed at children under the age of 13, and we do not knowingly collect
+                personal information from them. If you are a parent or guardian and believe your child has provided us
+                with personal information, please contact us so we can take appropriate action.</p>
+
+            <h2>9. Your Choices</h2>
+            <ul>
+                <li>Reset or opt out of ad personalization using the Advertising ID controls in your device settings.</li>
+                <li>Decline camera access and enter your numbers by hand; the scanner is optional.</li>
+                <li>Turn notifications off in the Application's Settings, or in your device's settings for this app.</li>
+                <li>Delete any saved number, or clear a whole draw, from the "My Numbers" screen.</li>
+                <li>Clear everything the Application has stored by clearing its data or uninstalling it.</li>
+            </ul>
+
+            <h2>10. Changes to This Privacy Policy</h2>
+            <p>We may update this Privacy Policy from time to time. Any changes take effect as soon as the revised
+                policy is posted on this page, and the "Last updated" date above will be revised accordingly. We
+                encourage you to review this page periodically.</p>
+
+            <h2>11. Contact Us</h2>
+            <p>If you have questions or suggestions about this Privacy Policy, please get in touch:</p>
+            <div class="contact-box">
+                <strong>Email Support:</strong>
+                <a href="mailto:weirdstudio770@gmail.com">weirdstudio770@gmail.com</a>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        Thai Lottery Result &middot; Weird Studio
+    </footer>
+
+</body>
+
+</html>
