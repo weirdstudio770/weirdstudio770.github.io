@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Let Focus</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent: #10b981;
+      --accent-light: #34d399;
+      --border: #334155;
+    }
+
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f8fafc;
+        --card-bg: #ffffff;
+        --text-main: #0f172a;
+        --text-muted: #64748b;
+        --accent: #059669;
+        --accent-light: #10b981;
+        --border: #e2e8f0;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      line-height: 1.65;
+      padding: 32px 16px;
+    }
+
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      background-color: var(--card-bg);
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      padding: 40px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+    }
+
+    .header-badge {
+      display: inline-block;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      background-color: rgba(16, 185, 129, 0.12);
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
+
+    .date {
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-top: 28px;
+      margin-bottom: 12px;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    p {
+      margin-bottom: 16px;
+      color: var(--text-main);
+      font-size: 15px;
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-bottom: 18px;
+      color: var(--text-main);
+      font-size: 15px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    li strong {
+      color: var(--accent-light);
+    }
+
+    .highlight-box {
+      background: rgba(16, 185, 129, 0.08);
+      border-left: 4px solid var(--accent);
+      padding: 16px 20px;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+
+    .highlight-box p {
+      margin: 0;
+      font-weight: 500;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .footer {
+      margin-top: 40px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      font-size: 14px;
+      color: var(--text-muted);
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 24px 20px;
+      }
+      h1 {
+        font-size: 24px;
+      }
+      h2 {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">
+      <div class="header-badge">Privacy-First & Offline</div>
+      <h1>Privacy Policy for Let Focus</h1>
+      <div class="date">Effective Date: September 2026</div>
+    </div>
+
+    <div class="highlight-box">
+      <p>🛡️ <strong>Summary:</strong> Let Focus does not collect, transmit, store, or sell any of your personal information. The app functions 100% offline without accounts, advertisements, or analytics tracking.</p>
+    </div>
+
+    <h2>1. Introduction</h2>
+    <p>At <strong>Let Focus</strong>, we respect your right to privacy and mindful productivity. This Privacy Policy details our practices concerning user data, device permissions, and local storage.</p>
+
+    <h2>2. Information We Do Not Collect</h2>
+    <p>Because Let Focus is built on an offline-first architecture:</p>
+    <ul>
+      <li><strong>No Account Registration:</strong> You do not need to log in or provide email addresses, names, or phone numbers.</li>
+      <li><strong>No Analytics or Trackers:</strong> We do not integrate tracking SDKs, crash report collectors, or behavioral monitoring tools.</li>
+      <li><strong>No Network Transmission:</strong> The release version of Let Focus explicitly removes network permissions (<code>android.permission.INTERNET</code>). None of your tasks, habits, notes, or timer logs can ever leave your device through the app.</li>
+    </ul>
+
+    <h2>3. Local Storage and Data Ownership</h2>
+    <p>All content created in Let Focus resides exclusively on your local device storage:</p>
+    <ul>
+      <li><strong>Data Storage:</strong> Pomodoro logs, tasks, habits, and rhythm configurations are stored in an isolated local database on your device.</li>
+      <li><strong>Backup & Export:</strong> You can export your data anytime as a standard JSON file to back up or transfer between devices.</li>
+      <li><strong>Data Deletion:</strong> You can wipe all stored data at any time via <em>Settings &gt; Your data &gt; Erase all data</em>, or by clearing app storage / uninstalling the app.</li>
+    </ul>
+
+    <h2>4. Device Permissions</h2>
+    <p>Let Focus requests only minimal permissions necessary to deliver reliable timer operations and notifications:</p>
+    <ul>
+      <li><strong>Post Notifications (<code>POST_NOTIFICATIONS</code>):</strong> Used on Android 13+ to notify you when focus blocks or breaks finish, and for habit reminders you configure.</li>
+      <li><strong>Foreground Service (<code>FOREGROUND_SERVICE</code> &amp; <code>FOREGROUND_SERVICE_SPECIAL_USE</code>):</strong> Displays a live countdown notification while a session is active and ensures the timer process is not killed by the OS.</li>
+      <li><strong>Exact Alarms (<code>SCHEDULE_EXACT_ALARM</code>):</strong> Ensures that interval completion alarms sound accurately to the exact second, even when your phone is in deep sleep / standby.</li>
+      <li><strong>Do Not Disturb Policy (<code>ACCESS_NOTIFICATION_POLICY</code>):</strong> Optional. Allows Let Focus to silence incoming notifications during a focus block and restore them during breaks.</li>
+      <li><strong>Battery Optimization Exemption (<code>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</code>):</strong> Optional. Allows you to exempt the timer from aggressive system battery management so background sessions aren't terminated.</li>
+      <li><strong>Vibration (<code>VIBRATE</code>):</strong> Delivers haptic feedback and vibrations upon interval completion.</li>
+      <li><strong>Wake Lock (<code>WAKE_LOCK</code>):</strong> Keeps the screen gently illuminated while viewing the clock in Zen Mode.</li>
+    </ul>
+
+    <h2>5. Third-Party Services</h2>
+    <p>Let Focus does not use any third-party services, APIs, or ad networks.</p>
+
+    <h2>6. Children's Privacy</h2>
+    <p>Our app does not collect personal data from anyone, including children under the age of 13.</p>
+
+    <h2>7. Policy Updates</h2>
+    <p>Any future revisions will be posted on this page with an updated effective date.</p>
+
+    <h2>8. Contact Us</h2>
+    <p>If you have any questions or feedback regarding this Privacy Policy or Let Focus, please contact:</p>
+    <ul>
+      <li><strong>Email:</strong> <a href="mailto:weirdstudio770@gmail.com">weirdstudio770@gmail.com</a></li>
+    </ul>
+
+    <div class="footer">
+      &copy; 2026 Let Focus. All rights reserved.
+    </div>
+  </div>
+
+</body>
+</html>
