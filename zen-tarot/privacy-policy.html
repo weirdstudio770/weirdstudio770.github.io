@@ -1,143 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Zen Tarot</title>
     <style>
+        :root {
+            --primary: #2d5a3c;
+            --primary-dark: #1b3a24;
+            --primary-light: #e8f0ea;
+            --accent: #c49a45;
+            --text-main: #243328;
+            --text-muted: #536b59;
+            --bg-page: #f7f9f7;
+            --bg-card: #ffffff;
+            --border: #dbe5dc;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #334e38;
-            background-color: #faf9f6;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.65;
+            color: var(--text-main);
+            background-color: var(--bg-page);
             margin: 0;
-            padding: 20px;
+            padding: 24px 16px;
         }
 
         .container {
-            max-width: 800px;
+            max-width: 820px;
             margin: 0 auto;
-            background: #ffffff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            background: var(--bg-card);
+            padding: 36px 32px;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(27, 58, 36, 0.06);
+            border: 1px solid var(--border);
         }
 
         .header-banner {
-            background-color: #4a6b51;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
             color: #ffffff;
-            padding: 25px;
-            border-radius: 6px;
-            margin-bottom: 30px;
+            padding: 28px 24px;
+            border-radius: 8px;
+            margin-bottom: 32px;
         }
 
         h1 {
-            margin: 0 0 10px 0;
-            font-size: 24px;
+            margin: 0 0 8px 0;
+            font-size: 26px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
         }
 
         .effective-date {
             font-size: 14px;
-            color: #e2ede4;
+            color: #d1e2d5;
             margin: 0;
-            font-style: italic;
         }
 
         h2 {
-            font-size: 18px;
-            color: #273e2c;
-            border-left: 4px solid #4a6b51;
-            padding-left: 10px;
-            margin-top: 30px;
-            margin-bottom: 15px;
+            font-size: 19px;
+            color: var(--primary-dark);
+            border-left: 4px solid var(--accent);
+            padding-left: 12px;
+            margin-top: 36px;
+            margin-bottom: 14px;
         }
 
-        p {
-            margin-bottom: 15px;
-            text-align: justify;
-        }
-
-        .service-provider {
-            background-color: #edf2ee;
-            border: 1px solid #d3e0d5;
-            border-radius: 6px;
-            padding: 15px;
-            margin-bottom: 15px;
-        }
-
-        .service-provider h3 {
+        h3 {
             margin-top: 0;
             margin-bottom: 8px;
             font-size: 16px;
-            color: #1b2e20;
+            color: var(--primary-dark);
+        }
+
+        p, li {
+            margin-bottom: 12px;
+            color: var(--text-main);
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-top: 4px;
+            margin-bottom: 16px;
+        }
+
+        .service-provider {
+            background-color: var(--primary-light);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 16px 18px;
+            margin-bottom: 16px;
+        }
+
+        .gdpr-box {
+            background-color: #fcf8ee;
+            border: 1px solid #ebd7a2;
+            border-left: 4px solid var(--accent);
+            border-radius: 8px;
+            padding: 18px 20px;
+            margin: 20px 0;
         }
 
         .contact-box {
-            background-color: #e4ece6;
-            border-left: 4px solid #4a6b51;
-            padding: 15px;
-            margin-top: 25px;
-            border-radius: 0 6px 6px 0;
+            background-color: var(--primary-light);
+            border-left: 4px solid var(--primary);
+            padding: 16px 20px;
+            margin-top: 24px;
+            border-radius: 0 8px 8px 0;
         }
 
         a {
-            color: #2a5235;
-            font-weight: bold;
+            color: var(--primary);
+            font-weight: 600;
             text-decoration: none;
         }
 
         a:hover {
             text-decoration: underline;
         }
+
+        .tag {
+            display: inline-block;
+            background-color: #e2ede5;
+            color: var(--primary-dark);
+            font-size: 12px;
+            font-weight: 600;
+            padding: 2px 8px;
+            border-radius: 4px;
+            margin-right: 6px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 22px 18px;
+            }
+            .header-banner {
+                padding: 20px 16px;
+            }
+            h1 {
+                font-size: 22px;
+            }
+        }
     </style>
 </head>
+
 <body>
 
     <div class="container">
         <div class="header-banner">
             <h1>Privacy Policy</h1>
-            <p class="effective-date">Last updated: May 19, 2026</p>
+            <p class="effective-date">Last updated: September 27, 2026</p>
         </div>
 
-        <p>This privacy policy governs your use of the software application <strong>Zen Tarot</strong> ("Application") for mobile devices. The Application provides daily tarot card readings, timeline readings, and an educational encyclopedia fully offline.</p>
+        <p>This privacy policy governs your use of the mobile application <strong>Zen Tarot</strong> ("Application"), created to provide intuitive Tarot divination, daily mindfulness guidance, and a comprehensive card encyclopedia.</p>
 
-        <h2>1. Information We Collect and Use</h2>
-        <p>The Application is designed to function primarily offline. We do not require you to create an account, and we do not collect, store, or transmit any personally identifiable information (such as your name, email address, or exact physical location) to our own servers.</p>
-        <p>However, to support app maintenance, monitor performance, and deliver advertisements, the Application utilizes integrated third-party Software Development Kits (SDKs). These third-party services may automatically collect certain non-sensitive data, specifically <strong>Device or Other IDs</strong> (such as Google Advertising ID, Android ID, or unique identifiers for analytics), which are transmitted and processed securely in transit using encryption (HTTPS).</p>
+        <p>Zen Tarot is designed as an <strong>offline-first, privacy-respecting sanctuary</strong>. We do not require you to create an account, register, or provide your personal identity to enjoy any of our Tarot reading features.</p>
 
-        <h2>2. Third-Party Services</h2>
-        <p>To support continuous development and monitor technical stability, we integrate the following third-party SDKs:</p>
+        <h2>1. Information We Collect and Storage Architecture</h2>
+        <p>The Application collects minimal data necessary to function, maintain stability, and serve compliant advertisements:</p>
+        <ul>
+            <li><strong>Local User Data (100% On-Device):</strong> All your Tarot reading journals, personal reflection notes, card draw history, and app preferences (theme, language, sound, and notifications) are saved <em>exclusively locally</em> on your device using encrypted key-value storage. We do not transmit or store your personal Tarot readings on any remote server.</li>
+            <li><strong>Device and Usage Information (Via Third-Party SDKs):</strong> When your device is connected to the internet, our integrated partners automatically receive standard non-sensitive technical identifiers, including your Google Advertising ID, operating system version, device model, and crash diagnostics. All transmissions use secure HTTPS/TLS encryption.</li>
+        </ul>
+
+        <h2>2. Third-Party Services and Analytics</h2>
+        <p>To fund ongoing development, monitor application reliability, and understand feature usage, the Application integrates industry-standard third-party services:</p>
 
         <div class="service-provider">
-            <h3>Google AdMob</h3>
-            <p>We use Google AdMob to display advertisements within the Application to fund continuous development. AdMob may collect and use device identifiers (such as the Advertising ID), usage data, and cookies to serve, personalize, or measure the effectiveness of advertisements. For more information, please visit: <a href="https://policies.google.com/technologies/ads" target="_blank">Google Advertising Policies</a>.</p>
+            <h3><span class="tag">Advertising</span>Google AdMob</h3>
+            <p>We use Google AdMob to display banner, interstitial, and app open advertisements. AdMob uses device identifiers (such as the Google Advertising ID or IDFA) to serve, personalize, and measure ad performance in compliance with platform rules.</p>
+            <p>Read more: <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google Advertising Policies</a></p>
         </div>
 
         <div class="service-provider">
-            <h3>Firebase Crashlytics</h3>
-            <p>We use Firebase Crashlytics to monitor application stability, detect bugs, and resolve performance issues. When a crash occurs, this service automatically collects anonymous crash logs, device models, operating system versions, and system state information. This data helps us improve the app and does not contain personal information. For more details, please visit: <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy and Security</a>.</p>
+            <h3><span class="tag">Diagnostics</span>Firebase Crashlytics</h3>
+            <p>We use Firebase Crashlytics to detect unexpected application crashes and bugs. When an error occurs, it securely transmits crash stack traces, device hardware details, and OS versions so we can release fixes promptly. This data is pseudonymous and contains no personal tarot records.</p>
+            <p>Read more: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy and Security</a></p>
         </div>
 
         <div class="service-provider">
-            <h3>Firebase Analytics</h3>
-            <p>We use Firebase Analytics to understand how users interact with the Application and to measure general usage patterns (such as screen views and session duration). This service collects anonymous interaction metrics and device identifiers to generate aggregated statistical reports. This helps us optimize user experience. For more information, please visit: <a href="https://firebase.google.com/policies/analytics" target="_blank">Google Analytics Partner Sites Policy</a>.</p>
+            <h3><span class="tag">Analytics</span>Firebase Analytics</h3>
+            <p>We use Firebase Analytics to aggregate anonymous usage statistics (such as popular spreads or reading types) to help us refine user experience. You can opt out of analytics tracking at device level.</p>
+            <p>Read more: <a href="https://firebase.google.com/policies/analytics" target="_blank" rel="noopener">Firebase Analytics Policy</a></p>
         </div>
 
-        <h2>3. Offline Storage and Data Security</h2>
-        <p>All your tarot reading history, individual preferences, and selected application settings are stored strictly locally on your mobile device. They are not uploaded to any remote server managed by us. Please note that if you delete the Application or clear its data via device settings, all locally stored progress will be permanently erased.</p>
+        <h2>3. European Users: GDPR and Google UMP Consent</h2>
+        <div class="gdpr-box">
+            <h3>Your Rights Under the General Data Protection Regulation (GDPR)</h3>
+            <p>If you reside within the European Economic Area (EEA), the United Kingdom, or Switzerland, you are protected by the General Data Protection Regulation and the ePrivacy Directive.</p>
+            <p><strong>Consent Management:</strong> We have implemented the certified <strong>Google User Messaging Platform (UMP) SDK</strong>. Before personalized ads or tracking identifiers are activated, a standardized GDPR consent dialogue is presented asking for your explicit consent.</p>
+            <p><strong>How to Revoke or Change Your Consent:</strong> You have the absolute right to revisit, change, or revoke your consent preferences at any time. Inside the Zen Tarot application, simply open:</p>
+            <p><strong>⚙️ Settings &rarr; Privacy &rarr; Ad Privacy Choices</strong></p>
+            <p>Tapping this option will immediately reload the Google Consent Dialog, allowing you to update vendor consents or switch between personalized and non-personalized advertising.</p>
+        </div>
 
-        <h2>4. Children's Privacy</h2>
-        <p>These Services do not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13. If you are a parent or guardian and you are aware that your child has provided third-party services within our app with personal information, please contact us so that we can take necessary actions.</p>
+        <h2>4. California Consumer Privacy Act (CCPA)</h2>
+        <p>Under the California Consumer Privacy Act (CCPA) and CPRA, California residents have the right to know what personal information is collected and to opt out of the sale or sharing of personal data. Zen Tarot does not sell your personal information. Third-party advertising partners comply with Google's Restricted Data Processing (RDP) protocols where applicable.</p>
 
-        <h2>5. Changes to This Privacy Policy</h2>
-        <p>We may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. These changes are effective immediately after they are posted on this page.</p>
+        <h2>5. Children's Privacy</h2>
+        <p>The Application is intended for general audiences aged 13 and above. We do not knowingly solicit or collect personally identifiable information from children under the age of 13. If you believe a child has provided data through our third-party SDKs, please contact us and we will promptly ensure appropriate steps are taken.</p>
 
-        <h2>6. Contact Us</h2>
-        <p>If you have any questions or suggestions about this Privacy Policy, do not hesitate to contact us at:</p>
+        <h2>6. Offline Data Retention and Deletion</h2>
+        <p>Since all your reading journals and personal notes reside solely on your device's internal storage, you have total control over your data:</p>
+        <ul>
+            <li>You can clear all reading records instantly inside the app by going to <strong>Settings &rarr; Clear Reading History</strong>.</li>
+            <li>Uninstalling the Application or clearing its app data in your device's System Settings will permanently erase all local journal entries.</li>
+        </ul>
+
+        <h2>7. Changes to This Privacy Policy</h2>
+        <p>We may update our Privacy Policy periodically to reflect app updates or regulatory developments. Any revisions will be published on this page with an updated "Last updated" date. We encourage you to review this policy periodically.</p>
+
+        <h2>8. Contact Us</h2>
+        <p>If you have questions, feedback, or inquiries regarding your privacy while using Zen Tarot, please contact us at:</p>
         <div class="contact-box">
-            <strong>Email Support:</strong> <a href="mailto:weirdstudio770@gmail.com">weirdstudio770@gmail.com</a>
+            <p><strong>Developer:</strong> Zen Tarot Support Team</p>
+            <p><strong>Email:</strong> <a href="mailto:weirdstudio770@gmail.com">weirdstudio770@gmail.com</a></p>
         </div>
     </div>
 
 </body>
+
 </html>
