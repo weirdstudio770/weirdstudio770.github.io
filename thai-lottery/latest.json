@@ -183,8 +183,13 @@
       "989748",
       "994647"
     ],
-    "front_3_digits": null,
-    "back_3_digits": null,
+    "front_3_digits": [
+      "791",
+      "912"
+    ],
+    "back_3_digits": [
+      "058"
+    ],
     "last_2_digits": null
   }
 }
