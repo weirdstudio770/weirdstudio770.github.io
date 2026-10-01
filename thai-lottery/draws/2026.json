@@ -7,10 +7,12 @@
       "th": "1 ตุลาคม 2569"
     },
     "source_url": "https://www.lottery.co.th/lotto/1-10-69",
-    "is_in_progress": true,
     "results": {
-      "first_prize": null,
-      "near_first_prize": null,
+      "first_prize": "402701",
+      "near_first_prize": [
+        "402700",
+        "402702"
+      ],
       "second_prize": [
         "034909",
         "120486",
