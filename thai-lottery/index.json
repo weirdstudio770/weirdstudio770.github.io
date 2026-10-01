@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-10-01",
+    "date_label": {
+      "en": "1 October 2026",
+      "mm": "1 အောက်တိုဘာ 2026",
+      "th": "1 ตุลาคม 2569"
+    },
+    "first_prize": null,
+    "last_2_digits": null,
+    "is_in_progress": true
+  },
+  {
     "date": "2026-09-16",
     "date_label": {
       "en": "16 September 2026",
