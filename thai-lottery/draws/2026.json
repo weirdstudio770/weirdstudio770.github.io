@@ -184,7 +184,10 @@
         "969818",
         "971178"
       ],
-      "front_3_digits": null,
+      "front_3_digits": [
+        "402",
+        "392"
+      ],
       "back_3_digits": null,
       "last_2_digits": null
     }
