@@ -2,6 +2,6 @@
     "apiVersion": 27,
     "banners": [],
     "adFreeHour": 4,
-    "showBannerAds": true,
+    "showBannerAds": false,
     "showNativeAds": false
 }
