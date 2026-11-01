@@ -184,7 +184,9 @@
         "993731",
         "999092"
       ],
-      "front_3_digits": null,
+      "front_3_digits": [
+        "300"
+      ],
       "back_3_digits": null,
       "last_2_digits": null
     }
