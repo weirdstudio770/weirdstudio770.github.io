@@ -1,17 +1,17 @@
 {
   "schema_version": 1,
-  "data_version": 20261016999,
-  "latest_draw_date": "2026-10-16",
-  "next_draw_date": "2026-11-01",
+  "data_version": 20261101000,
+  "latest_draw_date": "2026-11-01",
+  "is_in_progress": true,
+  "next_draw_date": "2026-11-16",
   "next_draw_date_is_estimated": false,
   "upcoming_draws": [
-    "2026-11-01",
     "2026-11-16",
     "2026-12-01",
     "2026-12-16",
     "2026-12-30"
   ],
-  "total_draws": 259,
+  "total_draws": 260,
   "years_available": [
     2026,
     2025,
@@ -31,5 +31,5 @@
     "mm": "",
     "th": ""
   },
-  "generated_at": "2026-10-16"
+  "generated_at": "2026-11-01"
 }

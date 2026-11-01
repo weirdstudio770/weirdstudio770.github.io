@@ -1,5 +1,26 @@
 [
   {
+    "date": "2026-11-01",
+    "date_label": {
+      "en": "1 November 2026",
+      "mm": "1 နိုဝင်ဘာ 2026",
+      "th": "1 พฤศจิกายน 2569"
+    },
+    "source_url": "https://www.lottery.co.th/lotto/1-11-69",
+    "is_in_progress": true,
+    "results": {
+      "first_prize": null,
+      "near_first_prize": null,
+      "second_prize": null,
+      "third_prize": null,
+      "fourth_prize": null,
+      "fifth_prize": null,
+      "front_3_digits": null,
+      "back_3_digits": null,
+      "last_2_digits": null
+    }
+  },
+  {
     "date": "2026-10-16",
     "date_label": {
       "en": "16 October 2026",
