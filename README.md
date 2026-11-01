@@ -1,2 +1,2 @@
 # weirdstudio770.github.io
-github page
+github page for us
