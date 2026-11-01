@@ -1,8 +1,7 @@
 {
   "schema_version": 1,
-  "data_version": 20261101166,
+  "data_version": 20261101999,
   "latest_draw_date": "2026-11-01",
-  "is_in_progress": true,
   "next_draw_date": "2026-11-16",
   "next_draw_date_is_estimated": false,
   "upcoming_draws": [

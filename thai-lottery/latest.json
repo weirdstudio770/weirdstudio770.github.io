@@ -6,10 +6,12 @@
     "th": "1 พฤศจิกายน 2569"
   },
   "source_url": "https://www.lottery.co.th/lotto/1-11-69",
-  "is_in_progress": true,
   "results": {
-    "first_prize": null,
-    "near_first_prize": null,
+    "first_prize": "423224",
+    "near_first_prize": [
+      "423223",
+      "423225"
+    ],
     "second_prize": [
       "213938",
       "328742",
@@ -184,9 +186,13 @@
       "999092"
     ],
     "front_3_digits": [
-      "300"
+      "300",
+      "950"
     ],
-    "back_3_digits": null,
-    "last_2_digits": null
+    "back_3_digits": [
+      "393",
+      "804"
+    ],
+    "last_2_digits": "85"
   }
 }
