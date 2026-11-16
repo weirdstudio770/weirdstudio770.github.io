@@ -188,8 +188,11 @@
         "938",
         "101"
       ],
-      "back_3_digits": null,
-      "last_2_digits": null
+      "back_3_digits": [
+        "106",
+        "782"
+      ],
+      "last_2_digits": "06"
     }
   },
   {
