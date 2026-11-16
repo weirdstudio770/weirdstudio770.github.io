@@ -6,10 +6,12 @@
     "th": "16 พฤศจิกายน 2569"
   },
   "source_url": "https://www.lottery.co.th/lotto/16-11-69",
-  "is_in_progress": true,
   "results": {
-    "first_prize": null,
-    "near_first_prize": null,
+    "first_prize": "645654",
+    "near_first_prize": [
+      "645653",
+      "645655"
+    ],
     "second_prize": [
       "071470",
       "284440",
