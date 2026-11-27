@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Apk Analyzer</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #1e293b;
+            background-color: #f8fafc;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+
+        .header-banner {
+            background-color: #0D1015;
+            color: #ffffff;
+            padding: 25px;
+            border-radius: 6px;
+            border-bottom: 4px solid #6EE7A8;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            margin: 0 0 10px 0;
+            font-size: 24px;
+        }
+
+        .effective-date {
+            font-size: 14px;
+            color: #B8F5D3;
+            margin: 0;
+            font-style: italic;
+        }
+
+        h2 {
+            font-size: 18px;
+            color: #0F7A4D;
+            border-left: 4px solid #0F7A4D;
+            padding-left: 10px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            font-size: 15px;
+            margin-bottom: 6px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        code {
+            font-size: 13px;
+            overflow-wrap: anywhere;
+        }
+
+        .service-provider {
+            background-color: #f0fbf5;
+            border: 1px solid #c3ead6;
+            border-radius: 6px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        .service-provider h3 {
+            margin-top: 0;
+            color: #0B5F3C;
+        }
+
+        .callout {
+            background-color: #f1f5f9;
+            border-left: 4px solid #64748b;
+            padding: 15px;
+            border-radius: 0 6px 6px 0;
+            margin-bottom: 15px;
+        }
+
+        .contact-box {
+            background-color: #f0fbf5;
+            border-left: 4px solid #0F7A4D;
+            padding: 15px;
+            margin-top: 25px;
+            border-radius: 0 6px 6px 0;
+        }
+
+        a {
+            color: #0F7A4D;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header-banner">
+            <h1>Privacy Policy</h1>
+            <p class="effective-date">Last updated: November 27, 2026</p>
+        </div>
+
+        <p>This privacy policy describes how the mobile application <strong>Apk Analyzer</strong> ("the Application")
+            handles your information. The Application lets you inspect the apps installed on your device and APK files
+            you choose: their versions, size, permissions, components, signing certificate and manifest.</p>
+
+        <div class="callout">
+            <p style="margin:0"><strong>In short:</strong> apps and APK files are analysed on your device. We operate no
+                servers, and we do not receive your list of installed apps, your files or your usage history. The only
+                third party involved is Google AdMob, which serves the advertisements that fund the app.</p>
+        </div>
+
+        <h2>1. Installed Apps</h2>
+        <p>Showing and analysing your apps is the core purpose of the Application. For this it reads the list of
+            installed apps and the information Android holds about each of them, such as name, package name, icon,
+            version, size, permissions, components, signing certificate, install source and install dates.</p>
+        <ul>
+            <li><strong>Query all packages</strong> (<code>QUERY_ALL_PACKAGES</code>) lets the Application see every
+                installed app on Android 11 and above.</li>
+            <li><strong>Access list of installed apps</strong> (<code>com.android.permission.GET_INSTALLED_APPS</code>)
+                exists on some devices, such as certain Xiaomi phones. There the Application asks for your permission
+                before it can list your apps.</li>
+        </ul>
+        <p>This information is processed on your device only. We do not collect it, and the Application does not send
+            your list of installed apps to us or use it to choose advertisements.</p>
+
+        <h2>2. Usage Access (Optional)</h2>
+        <p>If you grant <strong>usage access</strong> (<code>PACKAGE_USAGE_STATS</code>) in your system settings, the
+            Application can show when apps were last used and how much storage they take, and can sort and filter by
+            that. The Application works without it, and you can withdraw it at any time in system settings. This
+            information stays on your device.</p>
+
+        <h2>3. Files</h2>
+        <ul>
+            <li>When you open an APK file, the Application makes a temporary copy in its private cache folder in order
+                to read it. Only the most recently opened file is kept.</li>
+            <li>When you export an APK or save an app icon, the file is written to the location you choose.</li>
+            <li>The Application does not request access to your whole storage, and none of these files are uploaded.</li>
+        </ul>
+        <p>Sharing an app summary, or opening an app in Google Play or in system settings, happens only when you tap the
+            corresponding action. The app you share to, or Google Play, then handles that information under its own
+            privacy policy.</p>
+
+        <h2>4. Information Stored on Your Device</h2>
+        <p>The Application keeps the following on your device so it can work between sessions:</p>
+        <ul>
+            <li>Your preferences, such as colour scheme and fingerprint format.</li>
+            <li>The package names of apps you recently viewed. Turning off <strong>Recently viewed apps</strong> in
+                Settings erases this list.</li>
+            <li>The time you first used the Application and the time it last showed a full screen advertisement, used to
+                limit how often advertisements appear.</li>
+        </ul>
+        <p>If Android backup is turned on for your device, these settings may be included in the backup stored with your
+            Google account. Uninstalling the Application, or clearing its data, erases the copy on your device.</p>
+
+        <h2>5. No Account and No Personal Data Collection by Us</h2>
+        <p>The Application does not require an account. We do not collect or store your name, email address, phone
+            number, contacts, or location. We operate no servers that receive data from the Application.</p>
+
+        <h2>6. Advertising and Third-Party Services</h2>
+        <div class="service-provider">
+            <h3>Google AdMob</h3>
+            <p>The Application displays advertisements supplied by Google AdMob to fund its development. To serve and
+                measure ads, Google may collect and process data such as your device's Advertising ID, IP address,
+                device and app information, and interaction with ads. Google may use this data to show you personalised
+                or non-personalised advertisements depending on the choice you make in the consent screen described
+                below.</p>
+            <p>For details of how Google uses this data, see
+                <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How
+                    Google uses information from sites or apps that use our services</a> and the
+                <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google Advertising
+                    Policies</a>.
+            </p>
+        </div>
+        <p>For advertising, the Application uses internet access, the network state and the Android advertising
+            identifier and advertising services permissions.</p>
+
+        <h2>7. Your Advertising Choices and Consent</h2>
+        <p>If you are in the European Economic Area, the United Kingdom, or Switzerland, the Application shows a
+            consent screen provided by Google's User Messaging Platform before serving personalised advertisements. You
+            choose there whether to allow personalised ads.</p>
+        <p>You can change that choice at any time: open <strong>Settings</strong> in the Application and select
+            <strong>Privacy options</strong>. Where the consent screen does not apply in your region, that entry is not
+            shown.</p>
+        <p>Independently of the Application, you may reset or delete your Advertising ID in your device settings
+            (Settings → Google → Ads on Android).</p>
+
+        <h2>8. Children's Privacy</h2>
+        <p>The Application is not directed to children under the age of 13, and we do not knowingly collect personal
+            information from children under 13. If you believe a child has provided personal information through the
+            Application, please contact us at the address below and we will take appropriate action.</p>
+
+        <h2>9. Data Security</h2>
+        <p>Because your preferences and the files you open stay on your device, their security depends on your device's
+            own protections, such as a screen lock, an up-to-date operating system, and the storage encryption your
+            device provides.</p>
+
+        <h2>10. Changes to This Privacy Policy</h2>
+        <p>We may update this policy from time to time. The revision date at the top of this page always reflects the
+            current version, and changes take effect when they are posted here. Please review this page periodically.
+        </p>
+
+        <h2>11. Contact Us</h2>
+        <p>If you have questions or suggestions about this privacy policy, contact us at:</p>
+        <div class="contact-box">
+            <strong>Email Support:</strong> <a href="mailto:weirdstudio770@gmail.com">weirdstudio770@gmail.com</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
